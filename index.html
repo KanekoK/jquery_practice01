@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+  <script>
+  // jQuery(function($) {
+  //   $btn  = $('.btn_open button');
+  //   $area = $('.area_more');
+  //   $btn.on('click', function(e) {
+  //     e.preventDefault();
+  //     $btn.toggleClass('open');
+  //     $area.toggleClass('open').slideToggle();
+  //   });
+  // });
+
+  jQuery(function($) {
+    $btn  = $('.btn_open button');
+    $area = $('.area_more');
+    $btn.on('click', function(e) {
+      e.preventDefault();
+      $btn.toggleClass('open');
+      $area.toggleClass('open').slideToggle();
+    });
+  });
+  //after 擬似要素
+  </script>
+
+  <style>
+  .btn_open button {
+    display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .gallery {
+    width: 900px;
+    padding: 10px 5px 0;
+    background-color: #c0ffee;
+  }
+  .gallery li {
+    float: left;
+    display: block;
+    width: 140px;
+    height: 140px;
+    margin: 0 5px 10px;
+  }
+  .gallery img {
+    width: 100%;
+  }
+  .clearfix::after {
+    content: '';
+    display: block;
+    overflow: hidden;
+    clear: both;
+  }
+
+  .label_open {
+    display: inline;
+  }
+  .open .label_open {
+    display: none;
+  }
+  .label_close {
+    display: none;
+  }
+  .open .label_close {
+    display: inline;
+  }
+  </style>
+
+  <p class="btn_open">
+    <button>
+      <span class="label_open">さらに表示</span>
+      <span class="label_close">元に戻す</span>
+    </button>
+  </p>
+  <ul id="links02" class="links gallery area_more clearfix">
+    <li><a href="detail.html?id=55"><img src="350x350.png" class="base" alt="テストギャラリー-⑭テストタイトル"></a></li>
+    <li><a href="detail.html?id=54"><img src="350x350.png" class="base" alt="テストギャラリー-⑬テストタイトル"></a></li>
+    <li><a href="detail.html?id=53"><img src="350x350.png" class="base" alt="テストギャラリー-⑫テストタイトル"></a></li>
+    <li><a href="detail.html?id=52"><img src="350x350.png" class="base" alt="テストギャラリー-⑪テストタイトル"></a></li>
+    <li><a href="detail.html?id=51"><img src="350x350.png" class="base" alt="テストギャラリー-⑩テストタイトル"></a></li>
+    <li><a href="detail.html?id=50"><img src="350x350.png" class="base" alt="テストギャラリー-⑨テストタイトル"></a></li>
+    <li><a href="detail.html?id=49"><img src="350x350.png" class="base" alt="テストギャラリー-⑧テストタイトル"></a></li>
+    <li><a href="detail.html?id=48"><img src="350x350.png" class="base" alt="テストギャラリー-⑦テストタイトル"></a></li>
+    <li><a href="detail.html?id=47"><img src="350x350.png" class="base" alt="テストギャラリー-⑥テストタイトル"></a></li>
+    <li><a href="detail.html?id=46"><img src="350x350.png" class="base" alt="テストギャラリー-⑤テストタイトル"></a></li>
+    <li><a href="detail.html?id=45"><img src="350x350.png" class="base" alt="テストギャラリー-④テストタイトル"></a></li>
+    <li><a href="detail.html?id=44"><img src="350x350.png" class="base" alt="テストギャラリー-③テストタイトル"></a></li>
+    <li><a href="detail.html?id=43"><img src="350x350.png" class="base" alt="テストギャラリー-②長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル"></a></li>
+    <li><a href="detail.html?id=56"><img src="350x350.png" class="base" alt="テストギャラリー-⑮テストタイトル"></a></li>
+  </ul>
+</body>
+</html>
